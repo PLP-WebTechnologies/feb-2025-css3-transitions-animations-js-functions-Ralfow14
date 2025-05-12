@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Animations Demo</h1>
+        
+        <div class="preference-panel">
+            <h2>User Preferences</h2>
+            <div class="toggle-group">
+                <label>
+                    <input type="checkbox" id="darkModeToggle"> Dark Mode
+                </label>
+                <label>
+                    <input type="checkbox" id="animationToggle"> Enable Animations
+                </label>
+            </div>
+            <button id="resetBtn">Reset Preferences</button>
+        </div>
+        
+        <div class="animation-demo">
+            <h2>Animation Demo</h2>
+            <button id="animateBtn" class="pulse-animation">Click to Animate</button>
+            <div id="animatedElement" class="box"></div>
+        </div>
+        
+        <div class="gallery">
+            <h2>Image Gallery</h2>
+            <div class="image-container">
+                <img src="https://picsum.photos/300/200?random=1" alt="Sample image 1" class="zoom-animation">
+                <img src="https://picsum.photos/300/200?random=2" alt="Sample image 2" class="zoom-animation">
+                <img src="https://picsum.photos/300/200?random=3" alt="Sample image 3" class="zoom-animation">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
